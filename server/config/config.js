@@ -22,7 +22,9 @@ let urlDB;
 if(process.env.NODE_ENV === 'dev'){
     urlDB = 'mongodb://localhost:27017/DBCafeBar';
 }else{*/
-urlDB= 'mongodb+srv://Javier:jc050691@cluster0-eclpr.gcp.mongodb.net/test?retryWrites=true&w=majority';
+urlDB= process.env.MONGO_URI;
 //}
 
 process.env.URLDB = urlDB;
+/*uri para usar las variables de entorno de heroku */
+/*urlDB= process.env.MONGO_URI; */

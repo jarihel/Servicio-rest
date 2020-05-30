@@ -18,6 +18,14 @@ npm i bcrypt
 
 
 
+## para setear variables de entorno en heroku
+
+## heroku config                       (muestra las variables)
+## heroku config:set nombre="Javier"   (setea)
+## heroku config:get nombre            (obtener)
+## heroku config:unset nombre          (borrar)
+
+
 
 
 
